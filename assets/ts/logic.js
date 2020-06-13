@@ -7,7 +7,7 @@ var Logic = /** @class */ (function () {
         var input = document.querySelector('input.num-input');
         var length = Number(input.value);
         var password = UTIL.generatePassword(length);
-        document.querySelector('.password').textContent = password;
+        document.querySelector('span.text-field').textContent = password;
     };
     Logic.getPassword = function () {
         UTIL.copySelection('p.password');

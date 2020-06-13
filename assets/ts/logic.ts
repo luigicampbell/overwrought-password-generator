@@ -8,7 +8,7 @@ class Logic {
     const input:HTMLInputElement = document.querySelector('input.num-input') as HTMLInputElement;
     const length:number = Number(input.value);
     const password:string = UTIL.generatePassword(length);
-    document.querySelector('.password').textContent = password;
+    document.querySelector('span.text-field').textContent = password;
   }
 
   public static getPassword = ():void => {
