@@ -56,5 +56,11 @@ class UTIL {
   public static getCurrentYear = ():number => {
     return new Date().getFullYear();
   }
+
+  public static copySelection = async (selector:string):Promise<void> => {
+    const selection:HTMLElement = document.querySelector(selector) as HTMLElement;
+   const textToCopy:string = selection.innerText;
+    const result = await navigator.clipboard.writeText(textToCopy);
+  }
   
 }

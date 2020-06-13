@@ -11,6 +11,10 @@ main {
   grid-auto-rows: minmax(150px,auto);
 }
 
+section {
+  padding: 1em .5em;
+}
+
 section:nth-child(odd) {
   background-color: #f0f0f0;
   color: #000;
@@ -26,7 +30,6 @@ h1 {
 }
 
 p {
-  padding: 1em .5em;
   text-align: justify;
   line-height: 2em;
   word-wrap: break-word;
@@ -54,6 +57,9 @@ a {
   justify-content: center;
 }
 
+.text-center {
+  text-align: center;
+}
 
 .password {
   color: #00e676;
@@ -61,6 +67,20 @@ a {
   letter-spacing: .5em;
   padding: 1em .5em;
   border: 4px dashed #00e676;
+}
+
+.password:hover {
+  opacity: .7;
+}
+
+.password:active {
+  opacity: .9;
+}
+
+.corner-svg {
+  position: relative;
+  left: 230px;
+  bottom: 15px;
 }
 
 .num-input {
@@ -73,6 +93,37 @@ a {
 .btn {
   width: 200px;
   padding: 1em;
+}
+
+.modal {
+  top: 17vh;
+  right: 0;
+  position: absolute;
+  background: green;
+  width: 100%;
+  display: block;
+  animation: displayModal .3s;
+}
+
+.hide-modal {
+  display: none;
+  animation: hideModal 1s;
+}
+
+@keyframes displayModal {
+  from {
+    transform: scale(0);
+  } to {
+    transform: scale(1);
+  }
+}
+
+@keyframes hideModal {
+  from {
+    transform: scale(1);
+  } to {
+    transform: scale(0);
+  }
 }
 
 footer {
