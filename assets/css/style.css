@@ -79,9 +79,8 @@ a {
 
 .corner-svg {
   position: relative;
-  left: 320px;
-  top: 35px;
-  color: #00e676;
+  left: 230px;
+  bottom: 15px;
 }
 
 .num-input {
