@@ -55,18 +55,15 @@ var __spread = (this && this.__spread) || function () {
     return ar;
 };
 var _this = this;
-var UTIL = /** @class */ (function () {
+var UTIL = (function () {
     function UTIL() {
     }
-    //Fisher Yates shuffle
     UTIL.shuffle = function (list) {
         var counter = list.length;
         var temp;
         var index;
-        // While there remain elements to shuffle…
         while (counter) {
             index = Math.floor(Math.random() * counter--);
-            // And swap it with the current element.
             temp = list[counter];
             list[counter] = list[index];
             list[index] = temp;
@@ -113,10 +110,10 @@ var UTIL = /** @class */ (function () {
                 case 0:
                     selection = document.querySelector(selector);
                     textToCopy = selection.innerText;
-                    return [4 /*yield*/, navigator.clipboard.writeText(textToCopy)];
+                    return [4, navigator.clipboard.writeText(textToCopy)];
                 case 1:
                     result = _a.sent();
-                    return [2 /*return*/];
+                    return [2];
             }
         });
     }); };

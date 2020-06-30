@@ -1,4 +1,4 @@
-var Logic = /** @class */ (function () {
+var Logic = (function () {
     function Logic() {
         var year = UTIL.getCurrentYear();
         document.querySelector('span.currentYear').textContent = String(year);
@@ -12,7 +12,6 @@ var Logic = /** @class */ (function () {
     Logic.getPassword = function () {
         UTIL.copySelection('p.password');
         Logic.displayModal();
-        console.log('modal');
     };
     Logic.displayModal = function () {
         var modal = document.querySelector('div.hide-modal');

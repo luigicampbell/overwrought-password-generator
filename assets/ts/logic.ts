@@ -14,7 +14,7 @@ class Logic {
   public static getPassword = ():void => {
      UTIL.copySelection('p.password');
      Logic.displayModal();
-     console.log('modal')
+    //  console.log('modal')
   }
 
   public static displayModal = ():void => {

@@ -33,8 +33,6 @@ h1 {
 p {
   text-align: justify;
   line-height: 2em;
-  word-wrap: break-word;
-  word-break: break-all;
 }
 
 a {
@@ -68,6 +66,10 @@ a {
   letter-spacing: .5em;
   padding: 1em .5em;
   border: 4px dashed #00e676;
+  word-break: break-all;
+  text-align: justify;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .password:hover {
@@ -75,13 +77,12 @@ a {
 }
 
 .password:active {
-  opacity: .9;
+  opacity: 1;
 }
 
 .corner-svg {
-  position: relative;
-  left: 230px;
-  bottom: 15px;
+  align-self: flex-end;
+   justify-self: flex-end;
 }
 
 .num-input {
@@ -135,6 +136,7 @@ footer {
   padding: 1em;
   width: 100%;
   background: #f0f0f0;
+  font-family: 'Roboto',sans-serif;
 }
 
 footer svg {
